@@ -1,0 +1,26 @@
+init:
+	geth -datadir ./blockchain init ./genesis.json
+
+run:
+	geth --datadir ./blockchain --networkid 777 --ws --wsorigins "*" --wsapi="eth,web3,personal,miner" --gasprice 1 
+
+runH:
+	geth --datadir ./blockchain --networkid 777 --rpc --rpcapi="eth,web3,personal,miner,net,debug" --gasprice 0  --mine
+
+attach:
+	geth attach ws://localhost:8546
+
+attachH:
+	geth attach http://localhost:8545
+
+script:
+	geth attach ws://localhost:8546 --preload ./lazyMine.js
+
+scriptH:
+	geth attach http://localhost:8545 --preload ./lazyMine.js
+
+clean:
+	rm -rf blockchain/
+	rm -rf ~/.ethash
+
+
