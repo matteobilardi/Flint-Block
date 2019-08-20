@@ -1,12 +1,12 @@
 {
-    "config": {  
-        "chainId": 731, 
+    "config": {
+        "chainId": 731,
 	"byzantiumBlock": 0
     },
     "difficulty": "0x0",
     "gasLimit": "0x8000000",
     "alloc": {
-	   "33ef01cede4b041d64f6ee1e63a3996dab1a0d30": {
+	   "0xcA98b9e9801C7FD00b36Fa6dD0dA5B412da0F2e3": {
 		   "balance": "500000"
 	   }
     }
