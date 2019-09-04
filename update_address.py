@@ -14,7 +14,6 @@ ethereum_address = flint_config_json["ethereumAddress"]
 with open(genesis_file_path, "r") as genesis_file:
     genesis_config_json = json.load(genesis_file)
 
-
 balance = "5000000" 
 genesis_config_json["alloc"] = {ethereum_address : {"balance": balance}}
 
