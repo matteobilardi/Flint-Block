@@ -23,5 +23,6 @@ function poll() {
 eth.filter("latest", checkPendingTransactions);
 eth.filter("pending", checkPendingTransactions);
 checkPendingTransactions();
+poll()
 
 

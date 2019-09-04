@@ -1,16 +1,13 @@
 {
-    "config": {
-        "chainId": 1,
-	"byzantiumBlock": 0
-    },
-    "difficulty": "0x0",
-    "gasLimit": "0x8000000",
-    "alloc": {
-	   "804ce6f53fa1e2418c5d77ec88259a1abc9bff90": {
-		   "balance": "5000000"
-	   }
+  "config": {
+    "chainId": 1,
+    "byzantiumBlock": 0
+  },
+  "difficulty": "0x0",
+  "gasLimit": "0x8000000",
+  "alloc": {
+    "ed44aab4285107ea93d6dab3d47f258ecf0d2d48": {
+      "balance": "5000000"
     }
+  }
 }
-
-
-
